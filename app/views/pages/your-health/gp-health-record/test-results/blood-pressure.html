@@ -1,0 +1,16 @@
+{% from './page-templates/single-test-result/macro.njk' import singleTestResult %}
+
+{{ singleTestResult({
+  pageTitle: "Blood pressure reading",
+  testDate: "7 September 2024",
+  bpResultValue: {
+    systolic: "109",
+    diastolic: "67"
+  },
+  hcpComments: ["Normal - Take no action"],
+  supportingContent: { 
+    text: "What is a Blood pressure reading test?", 
+    link: "https://www.nhs.uk/conditions/blood-pressure-test/" 
+  },
+  historyLink: "/pages/your-health/gp-health-record/test-results/blood-pressure-history"
+}) }}

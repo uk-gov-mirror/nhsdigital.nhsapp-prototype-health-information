@@ -1,0 +1,33 @@
+{% from './page-templates/single-test-result/macro.njk' import singleTestResult %}
+
+{{ singleTestResult({
+  pageTitle: "Haemoglobin A1c level",
+  testDate: "14 March 2025",
+  resultValue: "35.0 mmol/mol",
+  referenceRange: "between 20 and 41 mmol/mol",
+  indicatorRangeBar: {
+    minimumReferenceRange: 20,
+    maximumReferenceRange: 41,
+    resultValue: 35.0,
+    unitsOfMeasurements: "mmol/mol",
+    markerPosition: 80,
+    ariaRangeLabel: "outside"
+  },
+  hcpComments: ["Abnormal, book an appointment with a GP"],
+  labComments: [
+    "HbA1c for monitoring established diabetes (NICE 2017)",
+    "48 - 58 mmol/mol",
+    "Interpret in relation to individualised target.",
+    "HbA1c for diagnosis of type II diabetes (WHO 2011 NICE 2017)",
+    "20 - 41 mmol/mol Normal",
+    "42 - 47 mmol/mol Pre diabetes",
+    "> 47 mmol/mol Diagnostic of diabetes",
+    "For diagnosis of type II diabetes in asymptomatic patients two results > 47 mmol/mol are required.",
+    "If second sample is < 48 mmol/mol they should be treated as high risk for diabetes. (Pre diabetes)"
+  ],
+  supportingContent: { 
+    text: "What is a Haemoglobin A1c level test?", 
+    link: "https://labtestsonline.org.uk/tests/hba1c-test" 
+  },
+  historyLink: "/pages/your-health/gp-health-record/test-results/haemoglobin-history"
+}) }}

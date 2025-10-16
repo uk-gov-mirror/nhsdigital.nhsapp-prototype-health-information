@@ -1,0 +1,46 @@
+{% from 'components/indicator-range-bar/macro.njk' import indicatorRangeBar %}
+{% from 'components/supporting-content/macro.njk' import supportingContent %}
+{% from 'components/hcp-comments/macro.njk' import hcpComments %}
+{% from 'components/lab-comments-collapsible/macro.njk' import labCommentsCollapsible %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+
+<li>
+  <h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-1">{{ params.testName }}</h3>
+  <p class="nhsuk-heading-m nhsuk-u-margin-bottom-1 nhsuk-u-padding-top-0">{{ params.value }}</p>
+  <p class="nhsuk-u-secondary-text-color">The reference range is {{ params.referenceRange }}</p>
+
+  {%- if params.indicatorRangeBar %}
+    {{ indicatorRangeBar({
+      minimumReferenceRange: params.indicatorRangeBar.minimumReferenceRange,
+      maximumReferenceRange: params.indicatorRangeBar.maximumReferenceRange,
+      resultValue: params.indicatorRangeBar.resultValue,
+      unitsOfMeasurements: params.indicatorRangeBar.unitsOfMeasurements,
+      markerPosition: params.indicatorRangeBar.markerPosition,
+      ariaRangeLabel: params.indicatorRangeBar.ariaRangeLabel,
+      classes: 'nhsuk-u-margin-bottom-8'
+      })}}
+  {%- endif %}
+
+  {%- if params.hcpComments %}
+    {{ hcpComments(params.hcpComments) }}
+  {%- endif %}
+
+  {%- if params.labComments %}
+    {{ labCommentsCollapsible(params.labComments) }}
+  {%- endif %}
+
+  {%- if params.supportingContent %}
+    {{ supportingContent(params.supportingContent) }}
+  {%- endif %}
+
+  {%- if params.historyLink %}
+    {{ nhsappCard({
+      title: 'View test results history',
+      href: params.historyLink,
+      linkAriaLabel: 'View test results history',
+      classes: 'nhsuk-u-margin-top-5'
+    }) }}
+  {%- endif %}
+
+  <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible color_nhsuk-grey-1">
+</li>

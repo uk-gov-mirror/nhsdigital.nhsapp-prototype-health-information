@@ -1,0 +1,267 @@
+{% from './page-templates/multi-test-result/macro.njk' import multiTestResult %}
+
+{{ multiTestResult({
+  pageTitle: "Full blood count - FBC",
+  supportingContent: { 
+    text: "What is a Full blood count - FBC test?", 
+    link: "https://labtestsonline.org.uk/tests/hba1c-test" 
+  },
+  testDate: "14 March 2025",
+  hcpComments: ["Normal - Take no action"],
+  labComments: ["Example lab comment"],
+  resultValues: [{
+    testName: "Total white cell count",
+    supportingContent: { 
+        text: "What is a Total white cell count test?", 
+        link: "https://labtestsonline.org.uk/tests/white-blood-cell-count" 
+    },
+    value: "5.9 10*9/L",
+    referenceRange: "between 4 and 11 10*9/L.",
+    indicatorRangeBar: {
+        minimumReferenceRange: 4,
+        maximumReferenceRange: 11,
+        resultValue: 5.9,
+        unitsOfMeasurements: "10*9/L",
+        markerPosition: 45,
+        ariaRangeLabel: "inside"
+    },
+    historyLink: "/pages/your-health/gp-health-record/test-results/total-white-cell-count-history"
+  },{
+    testName: "Haemoglobin estimation",
+    supportingContent: { 
+        text: "What is a Haemolgobin estimation", 
+        link: "https://labtestsonline.org.uk/tests/haemoglobin" 
+    },
+    value: "113 10*9/L",
+    referenceRange: "between 115 and 165 10*9/L.",
+    indicatorRangeBar: {
+        minimumReferenceRange: 115,
+        maximumReferenceRange: 165,
+        resultValue: 113,
+        unitsOfMeasurements: "10*9/L",
+        markerPosition: -5,
+        ariaRangeLabel: "outside"
+    },
+    hcpComments: ["Normal - Take no action"],
+    labComments: ["Example lab comment"],
+    historyLink: "/pages/your-health/gp-health-record/test-results/haemoglobin-estimation-history"
+  },{
+    testName: "Platelet count",
+    supportingContent: { 
+        text: "What is a Platelet count test?", 
+        link: "https://labtestsonline.org.uk/tests/platelet-count" 
+    },
+    value: "229 10*9/L",
+    referenceRange: "between 150 and 450 10*9/L",
+    indicatorRangeBar: {
+        minimumReferenceRange: 15,
+        maximumReferenceRange: 450,
+        resultValue: 229,
+        unitsOfMeasurements: "10*9/L",
+        markerPosition: 20,
+        ariaRangeLabel: "inside"
+    },
+    labComments: ["TBC"],
+    historyLink: "/pages/your-health/gp-health-record/test-results/platelet-count-history"
+  },{
+    testName: "Red blood cell (RBC)",
+    supportingContent: { 
+        text: "What is a Red blood cell (RBC) test?", 
+        link: "https://labtestsonline.org.uk/tests/red-blood-cell-count" 
+    },
+    value: "4.34 10*12/L",
+    referenceRange: "between 3.9 and 5.8 10*12/L.",
+    indicatorRangeBar: {
+        minimumReferenceRange: 3.9,
+        maximumReferenceRange: 5.8,
+        resultValue: 4.34,
+        unitsOfMeasurements: "10*12/L",
+        markerPosition: 25,
+        ariaRangeLabel: "inside"
+    },
+    historyLink: "#"
+  },{
+    testName: "Haematocrit",
+    value: "0.397 L/L",
+    referenceRange: "between 0.37 and 0.47 L/L.",
+    indicatorRangeBar: {
+        minimumReferenceRange: 0.37,
+        maximumReferenceRange: 0.47,
+        resultValue: 0.397,
+        unitsOfMeasurements: "L/L",
+        markerPosition: 20,
+        ariaRangeLabel: "inside"
+    },
+    historyLink: "#"
+  },{
+    testName: "Mean corpuscular volume (MCV)",
+    supportingContent: { 
+        text: "What is a Mean corpuscular volume (MCV) test?", 
+        link: "https://labtestsonline.org.uk/tests/white-blood-cell-count" 
+    },
+    value: "91.5 fL",
+    referenceRange: "between 78 and 97 fL.",
+    indicatorRangeBar: {
+        minimumReferenceRange: 78,
+        maximumReferenceRange: 97,
+        resultValue: 91.5,
+        unitsOfMeasurements: "fL",
+        markerPosition: 80,
+        ariaRangeLabel: "inside"
+    },
+    historyLink: "#"
+  },
+  {
+    testName: "Mean corpuscular haemoglobin (MCH)",
+    supportingContent: { 
+        text: "What is a Mean corpuscular haemoglobin (MCH) test?", 
+        link: "https://labtestsonline.org.uk/tests/red-cell-indices" 
+    },
+    value: "30.4 pg",
+    referenceRange: "between 27 and 34 pg.",
+    indicatorRangeBar: {
+        minimumReferenceRange: 27,
+        maximumReferenceRange: 34,
+        resultValue: 30.4,
+        unitsOfMeasurements: "pg",
+        markerPosition: 50,
+        ariaRangeLabel: "inside"
+    },
+    historyLink: "#"
+  },
+  {
+    testName: "Mean corpusc. Hb. conc. (MCHC)",
+    supportingContent: { 
+        text: "What is a Mean corpusc. Hb. conc. (MCHC) test?", 
+        link: "https://labtestsonline.org.uk/tests/red-cell-indices" 
+    },
+    value: "332 g/L",
+    referenceRange: "between 310 and 360 g/L.",
+    indicatorRangeBar: {
+        minimumReferenceRange: 310,
+        maximumReferenceRange: 360,
+        resultValue: 332,
+        unitsOfMeasurements: "g/L",
+        markerPosition: 40,
+        ariaRangeLabel: "inside"
+    },
+    historyLink: "#"
+  },
+  {
+    testName: "Red blood cell distribut width",
+    supportingContent: { 
+        text: "What is a Red blood cell distribut width test?", 
+        link: "https://labtestsonline.org.uk/tests/full-blood-count-fbc" 
+    },
+    value: "13.5 %",
+    referenceRange: "between 11.5 and 15%.",
+    indicatorRangeBar: {
+        minimumReferenceRange: 11.5,
+        maximumReferenceRange: 15,
+        resultValue: 13.5,
+        unitsOfMeasurements: "%",
+        markerPosition: 45,
+        ariaRangeLabel: "inside"
+},
+    historyLink: "#"
+  },
+  {
+    testName: "Mean platelet volume",
+    supportingContent: { 
+        text: "What is a Mean platelet volume test?", 
+        link: "https://labtestsonline.org.uk/tests/platelet-function-tests" 
+    },
+    value: "10.2 fL",
+    historyLink: "/pages/your-health/gp-health-record/test-results/platelet-count-history"
+  },
+  {
+    testName: "Neutrophil count",
+    supportingContent: { 
+        text: "What is a Neutrophil count test?", 
+        link: "https://labtestsonline.org.uk/tests/white-blood-cell-count" 
+    },
+    value: "2.8 10*9/L",
+    referenceRange: "between 1.5 and 8.0 10*9/L.",
+    indicatorRangeBar: {
+        minimumReferenceRange: 1.5,
+        maximumReferenceRange: 8.0,
+        resultValue: 2.8,
+        unitsOfMeasurements: "10*9/L",
+        markerPosition: 10,
+        ariaRangeLabel: "inside"
+    },
+    historyLink: "#"
+  },
+  {
+    testName: "Lymphocyte count",
+    supportingContent: { 
+        text: "What is a Lymphocyte count test?", 
+        link: "https://labtestsonline.org.uk/tests/white-blood-cell-count" 
+    },
+    value: "2.1 10*9/L",
+    referenceRange: "between 1.1 and 4.0 10*9/L.",
+    indicatorRangeBar: {
+        minimumReferenceRange: 1.1,
+        maximumReferenceRange: 4.0,
+        resultValue: 2.1,
+        unitsOfMeasurements: "10*9/L",
+        markerPosition: 30,
+        ariaRangeLabel: "inside"
+    },
+    historyLink: "#"
+  },
+  {
+    testName: "Monocyte count",
+    supportingContent: { 
+        text: "What is a Monocyte count test?", 
+        link: "https://labtestsonline.org.uk/tests/white-blood-cell-count" 
+    },
+    value: "0.4 10*9/L",
+    referenceRange: "between 0.2 and 1.1 10*9/L.",
+    indicatorRangeBar: {
+        minimumReferenceRange: 0.2,
+        maximumReferenceRange: 1.1,
+        resultValue: 0.4,
+        unitsOfMeasurements: "10*9/L",
+        markerPosition: 20,
+        ariaRangeLabel: "inside"
+    },
+    historyLink: "#"
+  },
+  {
+    testName: "Eosinophil count",
+    supportingContent: { 
+        text: "What is a Eosinophil count test?", 
+        link: "https://labtestsonline.org.uk/tests/white-blood-cell-count" 
+    },
+    value: "0.2 10*9/L",
+    referenceRange: "between 0.1 and 0.4 10*9/L.",
+    indicatorRangeBar: {
+        minimumReferenceRange: 0.1,
+        maximumReferenceRange: 0.4,
+        resultValue: 0.2,
+        unitsOfMeasurements: "10*9/L",
+        markerPosition: 30,
+        ariaRangeLabel: "inside"
+    },
+    historyLink: "#"
+  },
+  {
+    testName: "Basophil count",
+    supportingContent: { 
+        text: "What is a Basophil count test?", 
+        link: "https://labtestsonline.org.uk/tests/white-blood-cell-count" 
+    },
+    value: "0.0 10*9/L",
+    referenceRange: "between 0 and 0.3 10*9/L.",
+    indicatorRangeBar: {
+        minimumReferenceRange: 0,
+        maximumReferenceRange: 0.3,
+        resultValue: 0.0,
+        unitsOfMeasurements: "10*9/L",
+        markerPosition: 0,
+        ariaRangeLabel: "inside"
+    },
+    historyLink: "#"
+  }]
+}) }}
