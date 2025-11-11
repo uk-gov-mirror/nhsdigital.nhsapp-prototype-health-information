@@ -1,0 +1,55 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Your health" %}
+
+{% set backLink = true %}
+{% set backLinkText = "Back" %}
+
+{% set pageHeading = "Appointment notes and other updates" %}
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <!-- DYNAMIC PAGE TITLE -->
+      {{ dynamicPageTitle({
+        title: pageHeading
+    })}}
+<div class="nhsapp-card">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+
+
+<!-- CARDS -->
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > Monday 3 June 2024  </p> <p> Croydon University Hospital - <br> RALPH, Amy (Mrs) </p> 
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-0" > History <ul>
+  <li>Attended alone: ID confirmed</li>
+  <li>multiple years history of lump left side of forehead</li>
+  <li>worried its something sinister</li>
+  <li>no hearing changes</li>
+  <li>no recent trauma</li>
+  <li>no weightloss</li>
+</ul> </p>
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0" > Problem <ul>
+  <li>O/E - A lump </li>
+</ul> </p>
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0" > Comment <ul>
+  <li>given length of time and potential gorwth can do US to confirm but reassured likely benign </li>
+</ul> </p>
+ </div> </div> </div>
+    <div class="nhsapp-card">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > No further information available </p></div> </div> </div>
+
+ <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <p>You may see medical abbreviations that you are not familiar with.</p>
+        <a href="#" class="app-link--with-icon nhsuk-link--no-visited-state">
+         {{ nhsappIcon('help') }}
+            Help with abbreviations
+        </a>
+      </div>
+    </div>
+{% endblock %}

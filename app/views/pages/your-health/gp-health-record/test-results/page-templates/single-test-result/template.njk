@@ -1,0 +1,71 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Your health" %}
+
+{% set backLink = true %}
+{% set backLinkText = "Back" %}
+
+
+
+{% block content %}
+
+
+
+<h1 class=nhsuk-u-margin-bottom-2>{{ params.pageTitle }}</h1>
+
+<p class="nhsuk-body-m nhsuk-u-padding-top-2 nhsuk-u-font-weight-bold">{{ params.testDate }}</p>
+
+{%- if params.resultValue %}
+  <h2 class="nhsuk-heading-s nhsuk-u-padding-top-4 nhsuk-u-margin-bottom-2">Your result</h2>
+  <p class="nhsuk-heading-m nhsuk-u-margin-bottom-2">{{ params.resultValue }}</p>
+  {%- if params.referenceRange %}
+    <p class="nhsuk-u-secondary-text-color">The reference range is {{ params.referenceRange }}</p>
+  {%- endif %}
+{%- endif %}
+
+{%- if params.bpResultValue %}
+    {{ bloodPressureResult(params.bpResultValue)}}
+{%- endif %}
+
+{%- if params.indicatorRangeBar %}
+  {{ indicatorRangeBar({
+    minimumReferenceRange: params.indicatorRangeBar.minimumReferenceRange,
+    maximumReferenceRange: params.indicatorRangeBar.maximumReferenceRange,
+    resultValue: params.indicatorRangeBar.resultValue,
+    unitsOfMeasurements: params.indicatorRangeBar.unitsOfMeasurements,
+    markerPosition: params.indicatorRangeBar.markerPosition,
+    ariaRangeLabel: params.indicatorRangeBar.ariaRangeLabel,
+    classes: 'nhsuk-u-margin-bottom-8'
+    })}}
+{%- endif %}
+
+{%- if params.hcpComments %}
+  {{ hcpComments(params.hcpComments) }}
+{%- endif %}
+
+{%- if params.labComments %}
+  {%- if params.fullLabComments %}
+    {{ labComments(params.labComments) }}
+  {%- else %}
+    {{ labCommentsCollapsible(params.labComments) }}
+  {%- endif %}
+{%- endif %}
+
+{%- if params.supportingContent %}
+  {{ supportingContent(params.supportingContent) }}
+{%- endif %}
+
+{%- if params.historyLink %}
+  {{ nhsappCard({
+    title: 'View test results history',
+    href: result.historyLink,
+    linkAriaLabel: 'View test results history',
+    classes: 'nhsuk-u-margin-top-5'
+  }) }}
+{%- endif %}
+
+<hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible color_nhsuk-grey-1">
+
+{{ glossary() }}
+
+{% endblock %}

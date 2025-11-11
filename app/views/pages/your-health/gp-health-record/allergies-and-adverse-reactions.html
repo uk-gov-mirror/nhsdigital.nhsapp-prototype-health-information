@@ -1,0 +1,54 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Your health" %}
+
+{% set backLink = true %}
+{% set backLinkText = "Back" %}
+
+{% set pageHeading = "Allergies and adverse reactions" %}
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <!-- DYNAMIC PAGE TITLE -->
+      {{ dynamicPageTitle({
+        title: pageHeading
+    })}}
+    <div class="nhsapp-card nhsuk-u-margin-bottom-2">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2" > 6 September 2025 10:30 am </p> 
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-4" > House dust mite allergy </p></div> </div> </div>
+
+<div class="nhsapp-card nhsuk-u-margin-bottom-2">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2" > 6 September 2025 4:30 pm </p> 
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-4" > Nut allergy </p></div> </div> </div>
+
+<div class="nhsapp-card nhsuk-u-margin-bottom-2">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2" > 15 May 2018 4:30 pm </p> 
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-4" > H/O:Rotavirus vaccine allergy </p></div> </div> </div>
+
+<div class="nhsapp-card nhsuk-u-margin-bottom-4">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > No further information available </p></div> </div> </div>
+
+ <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <p>You may see medical abbreviations that you are not familiar with.</p>
+        <a href="#" class="app-link--with-icon nhsuk-link--no-visited-state">
+          {{ nhsappIcon('help') }}
+          Help with abbreviations
+        </a>
+      </div>
+    </div>
+{% endblock %}

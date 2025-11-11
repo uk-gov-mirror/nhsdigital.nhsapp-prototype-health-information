@@ -1,0 +1,14 @@
+<details class="nhsuk-details nhsuk-u-margin-bottom-4">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      Laboratory comment
+    </span>
+  </summary>
+  <div class="nhsuk-details__text nhsuk-u-secondary-text-color">
+    {% for comment in params %}
+      <p>
+        {{ comment }}
+      </p>
+    {% endfor %}
+  </div>
+</details>

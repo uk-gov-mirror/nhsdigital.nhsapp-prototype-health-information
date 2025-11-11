@@ -1,0 +1,58 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Your health" %}
+
+{% set backLink = true %}
+{% set backLinkText = "Back" %}
+
+{% set pageHeading = "Health conditions" %}
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <!-- DYNAMIC PAGE TITLE -->
+      {{ dynamicPageTitle({
+        title: pageHeading
+    })}}
+
+    <div class="nhsapp-card">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > 6 September 2025 </p> 
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > Nut allergy <br> Significance: Significant <br> Status:Active </p>
+</div> </div> </div>
+
+<div class="nhsapp-card">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > 1 August 2025 </p> 
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > Hazelnut allergy <br> Significance: Significant <br> Status: Active <br> Notes: <br> Linked to letter about Nut Allergy </p>
+</div> </div> </div>
+
+<div class="nhsapp-card">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > 19 July 2019 </p> 
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > Otitis Media <br> Significance: Minor <br> Status: Active <br> Ended: 25 July 2019 </p>
+</div> </div> </div>
+
+        <div class="nhsapp-card">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > No further information available </p></div> </div> </div>
+
+ <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <p>You may see medical abbreviations that you are not familiar with.</p>
+        <a href="#" class="app-link--with-icon nhsuk-link--no-visited-state">
+         {{ nhsappIcon('help') }}
+            Help with abbreviations
+        </a>
+      </div>
+    </div>
+{% endblock %}
