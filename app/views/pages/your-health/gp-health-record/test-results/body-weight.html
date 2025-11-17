@@ -1,0 +1,9 @@
+{% from './page-templates/single-test-result/macro.njk' import singleTestResult %}
+
+{{ singleTestResult({
+  pageTitle: "Body weight",
+  testDate: "7 September 2024",
+  resultValue: "70kg",
+  hcpComments: ["No comment"],
+  historyLink: "#"
+}) }}

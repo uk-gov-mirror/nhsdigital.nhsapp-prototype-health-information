@@ -1,0 +1,22 @@
+{% from './page-templates/single-test-result/macro.njk' import singleTestResult %}
+
+{{ singleTestResult({
+  pageTitle: "Haemoglobin A1c level",
+  testDate: "8 May 2014",
+  resultValue: "37 mmol/mol",
+  referenceRange: "between 20 and 41 mmol/mol",
+  indicatorRangeBar: {
+    minimumReferenceRange: 20,
+    maximumReferenceRange: 41,
+    resultValue: 37.0,
+    unitsOfMeasurements: "mmol/mol",
+    markerPosition: 80,
+    ariaRangeLabel: "inside"
+  },
+  hcpComments: ["No comment"],
+  supportingContent: { 
+    text: "What is a Haemoglobin A1c level test?", 
+    link: "https://labtestsonline.org.uk/tests/hba1c-test" 
+  },
+  historyLink: "/pages/your-health/gp-health-record/test-results/haemoglobin-history"
+}) }}

@@ -1,0 +1,9 @@
+{% from './page-templates/single-test-result/macro.njk' import singleTestResult %}
+
+{{ singleTestResult({
+  pageTitle: "Body mass index",
+  testDate: "7 September 2024",
+  resultValue: "21.28 kg/m2",
+  hcpComments: ["(Calculation based on height entry 06-Sep-2023, NB prior to age 70 average height loss is 1cm per 10 years)."],
+  historyLink: "#"
+}) }}

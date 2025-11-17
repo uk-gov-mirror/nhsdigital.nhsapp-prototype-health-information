@@ -1,0 +1,58 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Your health" %}
+
+{% set backLink = true %}
+{% set backLinkText = "Back" %}
+
+{% set pageHeading = "Vaccinations" %}
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <!-- DYNAMIC PAGE TITLE -->
+      {{ dynamicPageTitle({
+        title: pageHeading
+    })}}
+ <div class="nhsapp-card">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2" > 28 February 2022 </p> 
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > Yellow fever vaccination </p></div> </div> </div>
+ <div class="nhsapp-card">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2" > 14 May 2023 </p> 
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > Influenza vaccination </p>
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > Reversibility with Salamol EB </p></div> </div> </div>
+ <div class="nhsapp-card">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2" > 28 February 2024 </p> 
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > Booster tetanus vaccination </p></div> </div> </div>
+ <div class="nhsapp-card">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2" > 28 February 2022 </p> 
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > Booster polio vaccination </p></div> </div> </div>
+    <div class="nhsapp-card">
+  <div class="nhsapp-card__container">
+    <div class="nhsapp-card__content">
+<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > No further information available </p></div> </div> </div>
+
+ <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <p>You may see medical abbreviations that you are not familiar with.</p>
+        <a href="#" class="app-link--with-icon nhsuk-link--no-visited-state">
+          Help with abbreviations
+        </a>
+      </div>
+    </div>
+{% endblock %}
+

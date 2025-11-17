@@ -1,0 +1,126 @@
+.outer-range {
+  display: block;
+  background-color: #ffb81c;
+  height: 22px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.inner-range {
+  display: block;
+  background: repeating-linear-gradient(
+    -45deg,
+    #59c3bc,
+    #59c3bc 4.5px,
+    #33b6ad 0,
+    #33b6ad 9px
+  );
+  margin: 0px auto 0px auto;
+  height: 20px;
+  width: 34%;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.result-below-min {
+  margin-left: var(--marker-position);
+}
+
+.result-above-max {
+  margin-left: var(--marker-position);
+}
+
+.result-in-range {
+  margin-left: var(--marker-position);
+}
+
+.result-span-indicator-center {
+  font-size: 16px;
+  margin-top: -70px;
+  margin-left: -70px;
+  width: 140px;
+  position: absolute;
+  display: block;
+  text-align: center;
+}
+
+.result-span-indicator-right {
+  margin-top: -70px;
+  margin-left: -130px;
+  width: 140px;
+  position: absolute;
+  display: block;
+  text-align: right;
+}
+
+.result-span-indicator-left {
+  margin-top: -70px;
+  margin-left: -10px;
+  width: 140px;
+  position: absolute;
+  display: block;
+  text-align: left;
+}
+
+.arrow-down-test-result-indicator-center {
+  display: block;
+  width: 20px;
+  margin: 0px auto 0px auto;
+}
+
+.arrow-down-test-result-indicator-right {
+  display: block;
+  width: 20px;
+  margin: 0px 0px 0px auto;
+}
+
+.arrow-down-test-result-indicator-left {
+  display: block;
+  width: 20px;
+  margin: 0px auto 0px 0px;
+}
+
+.range-indicator-margin {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.min-range-text {
+  position: relative;
+  display: inline-block;
+  top: 20px;
+  margin-left: -25px;
+  width: 50px;
+  text-align: center;
+}
+
+.max-range-text {
+  float: right;
+  position: relative;
+  display: inline-block;
+  top: 20px;
+  width: 50px;
+  right: -25px;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.error-message {
+  background: white;
+  border: 1px solid #aeb7bd;
+  margin-bottom: 32px;
+  padding: 20px;
+
+  p {
+    margin-bottom: 8px;
+    padding: 0;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

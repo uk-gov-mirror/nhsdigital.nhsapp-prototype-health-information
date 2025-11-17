@@ -1,0 +1,65 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Your health" %}
+
+{% set backLink = true %}
+{% set backLinkText = "Back" %}
+
+{% set pageHeading = "Your GP health record" %}
+
+
+
+{% block content %}
+
+
+<main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent" role="main">
+              
+
+<div style="background-color: #FFFBF0;" class="nhsuk-u-padding-bottom-6">
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <div class="nhsuk-u-margin-top-5"></div>
+
+    <div class="nhsuk-u-padding-top-6 nhsuk-u-padding-bottom-6;">
+      <div class="nhsuk-card" style="border-top: 6px solid #FFB81C;">
+        <div class="nhsuk-card__content">
+
+          <h1 class="nhsuk-heading-l nhsuk-u-margin-bottom-3">Sensitive information</h1>
+
+          <p class="nhsuk-body">
+            You may find test results here that you have not yet discussed with a doctor
+          </p>
+
+          <p class="nhsuk-body">
+            If you have any questions about these notes, or if you need help understanding them, contact your GP surgery.
+          </p>
+
+          
+
+
+  
+    
+  
+
+
+
+
+<a class="nhsuk-button nhsapp-button" data-module="nhsuk-button" href="/pages-u/test-results/gp-ordered-test-results" draggable="false" role="button">
+  Continue
+</a>
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  
+            </div></main>
+
+              {% endblock %}

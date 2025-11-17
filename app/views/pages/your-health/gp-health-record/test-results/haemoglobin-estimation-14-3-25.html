@@ -1,0 +1,22 @@
+{% from './page-templates/single-test-result/macro.njk' import singleTestResult %}
+
+{{ singleTestResult({
+  pageTitle: "Haemoglobin estimation",
+  testDate: "14 March 2025",
+  resultValue: "113 g/L",
+  referenceRange: "between 115 and 165 g/L",
+  indicatorRangeBar: {
+    minimumReferenceRange: 115,
+    maximumReferenceRange: 165,
+    resultValue: 113,
+    unitsOfMeasurements: "g/L",
+    markerPosition: -5,
+    ariaRangeLabel: "outside"
+  },
+  hcpComments: ["Abnormal, but expected - take no action"],
+  supportingContent: { 
+    text: "What is a Haemoglobin estimation test?", 
+    link: "https://labtestsonline.org.uk/tests/haemoglobin" 
+  },
+  historyLink: "/pages/your-health/gp-health-record/test-results/haemoglobin-estimation-history"
+}) }}

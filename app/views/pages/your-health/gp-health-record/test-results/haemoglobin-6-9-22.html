@@ -1,0 +1,22 @@
+{% from './page-templates/single-test-result/macro.njk' import singleTestResult %}
+
+{{ singleTestResult({
+  pageTitle: "Haemoglobin A1c level",
+  testDate: "6 September 2022",
+  resultValue: "5.3 %",
+  referenceRange: "between 4 and 6%",
+  indicatorRangeBar: {
+    minimumReferenceRange: 4,
+    maximumReferenceRange: 6,
+    resultValue: 5.3,
+    unitsOfMeasurements: "%",
+    markerPosition: 60,
+    ariaRangeLabel: "inside"
+  },
+  hcpComments: ["No comment"],
+  supportingContent: { 
+    text: "What is a Haemoglobin A1c level test?", 
+    link: "https://labtestsonline.org.uk/tests/hba1c-test" 
+  },
+  historyLink: "/pages/your-health/gp-health-record/test-results/haemoglobin-history"
+}) }}

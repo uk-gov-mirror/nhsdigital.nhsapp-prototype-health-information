@@ -1,0 +1,217 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Your health" %}
+
+{% set backLink = true %}
+{% set backLinkText = "Back" %}
+
+{% set pageHeading = "Your GP health record" %}
+
+
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <!-- DYNAMIC PAGE TITLE -->
+      {{ dynamicPageTitle({
+        title: pageHeading
+    })}}
+
+       <!-- USER INFO -->
+    <div>
+        <h2> Miss Mary Swanson</h2>
+    </div>
+    <div>
+        <h5 style="margin-bottom: 4px; font-size: 18px;">Date of birth</h5>
+        <p style="font-size: 16px;">11 August 1989</p>
+    </div>
+    <div>
+        <h5 style="padding-top: 16px; margin-bottom: 4px; font-size: 18px;">NHS number:</h5>
+        <p style="font-size: 16px;">123 456 7890</p>
+    </div>
+    <div>
+        <h5 style="padding-top: 16px; margin-bottom: 4px; font-size: 18px;">Address:</h5>
+        <p style="font-size: 16px;">73 Hamilton Terrace, London. NW8 9QX</p>
+    </div>
+  <ul class="nhsapp-cards nhsapp-cards--stacked">
+  <li class="nhsapp-card">
+    <div class="nhsapp-card__container">
+      <div class="nhsapp-card__content">
+        <a href="/pages/your-health/gp-health-record/allergies-and-adverse-reactions" class="nhsapp-card__link nhsuk-link--no-visited-state">
+          Allergies and adverse reactions
+        </a>
+      </div>
+
+
+<svg
+class="nhsapp-icon nhsapp-icon--chevron-right"
+xmlns="http://www.w3.org/2000/svg"
+aria-hidden="true"
+focusable="false"
+height="2rem"
+width="2rem"
+viewBox="0 0 24 24"
+>
+<path
+d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z"
+/>
+</svg>
+</div>
+</li>
+
+
+
+
+<li class="nhsapp-card">
+<div class="nhsapp-card__container">
+<div class="nhsapp-card__content">
+<a href="#" class="nhsapp-card__link nhsuk-link--no-visited-state">
+Medicines
+</a>
+</div>
+
+
+
+
+<svg
+class="nhsapp-icon nhsapp-icon--chevron-right"
+xmlns="http://www.w3.org/2000/svg"
+aria-hidden="true"
+focusable="false"
+height="2rem"
+width="2rem"
+viewBox="0 0 24 24"
+>
+<path
+d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z"
+/>
+</svg>
+</div>
+</li>
+
+
+
+
+<li class="nhsapp-card">
+<div class="nhsapp-card__container">
+<div class="nhsapp-card__content">
+<a href="/pages/your-health/gp-health-record/immunisations" class="nhsapp-card__link nhsuk-link--no-visited-state">
+Immunisations
+</a>
+</div>
+<svg
+class="nhsapp-icon nhsapp-icon--chevron-right"
+xmlns="http://www.w3.org/2000/svg"
+aria-hidden="true"
+focusable="false"
+height="2rem"
+width="2rem"
+viewBox="0 0 24 24"
+>
+<path
+d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z"
+/>
+</svg>
+</div>
+</li>
+
+
+
+
+<li class="nhsapp-card">
+<div class="nhsapp-card__container">
+<div class="nhsapp-card__content">
+<a href="/pages/your-health/gp-health-record/health-conditions" class="nhsapp-card__link nhsuk-link--no-visited-state">
+Health conditions
+</a>
+</div>
+<svg
+class="nhsapp-icon nhsapp-icon--chevron-right"
+xmlns="http://www.w3.org/2000/svg"
+aria-hidden="true"
+focusable="false"
+height="2rem"
+width="2rem"
+viewBox="0 0 24 24"
+>
+<path
+d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z"
+/>
+</svg>
+</div>
+</li>
+
+
+
+
+<li class="nhsapp-card">
+<div class="nhsapp-card__container">
+<div class="nhsapp-card__content">
+<a href="/pages/your-health/gp-health-record/test-results" class="nhsapp-card__link nhsuk-link--no-visited-state">
+Test results
+</a>
+</div>
+<svg
+class="nhsapp-icon nhsapp-icon--chevron-right"
+xmlns="http://www.w3.org/2000/svg"
+aria-hidden="true"
+focusable="false"
+height="2rem"
+width="2rem"
+viewBox="0 0 24 24"
+>
+<path
+d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z"
+/>
+</svg>
+</div>
+</li>
+
+
+
+
+<li class="nhsapp-card">
+<div class="nhsapp-card__container">
+<div class="nhsapp-card__content">
+<a href="/pages/your-health/gp-health-record/consultations" class="nhsapp-card__link nhsuk-link--no-visited-state">
+Consultations and events
+</a>
+</div>
+<svg
+class="nhsapp-icon nhsapp-icon--chevron-right"
+xmlns="http://www.w3.org/2000/svg"
+aria-hidden="true"
+focusable="false"
+height="2rem"
+width="2rem"
+viewBox="0 0 24 24"
+>
+<path
+d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z"
+/>
+</svg>
+</div>
+</li>
+
+
+
+
+<li class="nhsapp-card">
+<div class="nhsapp-card__container">
+<div class="nhsapp-card__content">
+<a href="/pages/your-health/gp-health-record/documents/documents" class="nhsapp-card__link nhsuk-link--no-visited-state">
+Documents
+</a>
+</div>
+
+
+
+
+<svg class="nhsapp-icon nhsapp-icon--chevron-right" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24" > <path d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z" /> </svg> </div> </li> </ul>
+
+</div> 
+
+
+{% endblock %}

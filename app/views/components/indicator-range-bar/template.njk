@@ -1,0 +1,19 @@
+<figure data-purpose="range-indicator" class="nhsuk-u-margin-left-0 nhsuk-u-margin-right-0 {{ params.classes }}">
+  <figcaption  class="nhsuk-u-visually-hidden">Your result {{ params.resultValue }} {{ params.unitsOfMeasurements }} represented visually on a range
+    indicator bar {{ params.ariaRangeLabel }} the reference range</figcaption>
+  <div  class="range-indicator-margin" aria-hidden="true">
+    <div  class="outer-range">
+      <div  class="inner-range">
+        <div  class="nhsuk-u-width-full">
+          <div class="result-in-range nhsuk-u-font-weight-bold"
+             style="--marker-position: {{ params.markerPosition }}%;"><span 
+               class="result-span-indicator-center"><br><span 
+                >{{ params.resultValue }}</span><img  alt=""
+                src="/images/down-arrow.svg"
+                class="arrow-down-test-result-indicator-center"></span></div>
+        </div><span  class="min-range-text">{{ params.minimumReferenceRange }}</span><span
+           class="max-range-text">{{ params.maximumReferenceRange }}</span>
+      </div>
+    </div>
+  </div>
+</figure>
