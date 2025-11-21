@@ -1,0 +1,70 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Your health" %}
+
+{% set backLink = true %}
+{% set backLinkText = "Back" %}
+
+{% set pageHeading = "3 June 2025 12:16pm" %}
+
+{% block content %}
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- DYNAMIC PAGE TITLE -->
+   {{ dynamicPageTitle({
+    title: pageHeading,
+    titleSmall: true
+}) }}
+
+
+      <div class="nhsuk-u-margin-bottom-7">
+<p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-2">Nurse Jamima Jackson  </p> 
+<p class="nhsuk-u-margin-top-0 nhsuk-u-font-size-22" > Branston Medical Practice 
+
+   <ul>
+    
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-0" > History <ul>
+  <li>Attended alone: ID confirmed</li>
+  <li>multiple years history of lump left side of forehead</li>
+  <li>worried its something sinister</li>
+  <li>no hearing changes</li>
+  <li>no recent trauma</li>
+  <li>no weightloss</li>
+</ul> </p>
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0" > Problem <ul>
+  <li>O/E - A lump </li>
+</ul> </p>
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0" > Comment <ul>
+  <li>given length of time and potential gorwth can do US to confirm but reassured likely benign </li>
+</ul> </p>
+      </div>
+
+    </div>
+  </div>
+
+<details class="nhsuk-details">
+  
+  <div class="nhsuk-details__text">
+    <p>An NHS number is a 10 digit number, like <span class="nhsuk-u-nowrap">999 123 4567</span>.</p>
+    <p>You can find your NHS number by logging in to the NHS App or on any document the NHS has sent you, such as your:</p>
+    <ul>
+      <li>prescriptions</li>
+      <li>test results</li>
+      <li>hospital referral letters</li>
+      <li>appointment letters</li>
+    </ul>
+    <p>Ask your GP surgery for help if you cannot find your NHS number.</p>
+
+  </div>
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      How to find your NHS number
+    </span>
+  </summary>
+</details>
+
+
+{% endblock %}

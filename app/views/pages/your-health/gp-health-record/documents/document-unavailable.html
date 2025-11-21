@@ -1,0 +1,28 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Your health" %}
+
+{% set backLink = true %}
+{% set backLinkText = "Back" %}
+
+{% set pageHeading = "Your Document" %}
+{% set pageDescription = "Added on 20 May 2025" %}
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <!-- DYNAMIC PAGE TITLE -->
+      {{ dynamicPageTitle({
+        title: pageHeading,
+        description: pageDescription
+    })}}
+
+  
+    <div class="nhsuk-body-l nhsuk-u-font-weight-bold" <p> This document is not available through the NHS App. </p> To access it, contact your GP surgery directly </p> 
+    </div>
+
+
+
+
+    {% endblock %}
