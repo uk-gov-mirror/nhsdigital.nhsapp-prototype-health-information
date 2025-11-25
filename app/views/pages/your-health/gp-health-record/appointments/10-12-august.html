@@ -1,0 +1,58 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Your health" %}
+
+{% set backLink = true %}
+{% set backLinkText = "Back" %}
+
+{% set pageHeading = "12 August 2024 3:30pm" %}
+{% set pageDescription = "Crescent Park Family Practice" %}
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    {{ dynamicPageTitle({
+      title: pageHeading,
+      titleSmall: true,
+      description: pageDescription
+    }) }}
+
+     <div class="nhsuk-u-margin-bottom-7">
+
+      <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+        Nurse Daniel Horton
+      </p>
+
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-0">History</p>
+<ul>
+  <li>Type-2 Diabetes for 3.5 years; managed with insulin and diet. </li>
+  <li>HbA1c levels stable</li>
+  <li>New onset chest pains over past month;</li>
+  <li>Sleep reduced due to increased workload.</li>
+  <li>No medication side effects reported.</li>
+  <li>Has history of hypertension</li>
+</ul>
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-0">Comment</p>
+<ul>
+  <li>Advised monitoring headache pattern, ensuring adequate hydration and sleep hygiene.</li>
+  <li>Requested 7-day BP readings to check for fluctuations.</li>
+  <li>Plan review in one week or earlier if symptoms escalate.</li>
+</ul>
+</div>
+
+<!-- Section Break -->
+ <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-2">
+
+ <div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <p>You may see medical abbreviations that you are not familiar with.</p>
+    <a href="https://www.nhs.uk/nhs-app/nhs-app-help-and-support/health-records-in-the-nhs-app/abbreviations-commonly-found-in-medical-records/" class="app-link--with-icon nhsuk-link--no-visited-state">
+      {{ nhsappIcon('help') }}
+      Help with abbreviations
+    </a>
+
+  </div>
+</div>
+
+{% endblock %}

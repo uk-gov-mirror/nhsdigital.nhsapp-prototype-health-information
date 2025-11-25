@@ -1,0 +1,56 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Your health" %}
+
+{% set backLink = true %}
+{% set backLinkText = "Back" %}
+
+{% set pageHeading = "18 November 2025 2:25pm" %}
+{% set pageDescription = "Crescent Park Family Practice" %}
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    {{ dynamicPageTitle({
+      title: pageHeading,
+      titleSmall: true,
+      description: pageDescription
+    }) }}
+
+    <div class="nhsuk-u-margin-bottom-7">
+
+      <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+        Nurse Jamima Jackson
+      </p>
+
+
+      <p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-0">History</p>
+      <ul>
+        <li>Patient diagnosed with Type-2 Diabetes 4.5 years ago</li>
+        <li>Treatments include insulin and dietary changes</li>
+        <li>Patient also diagnosed with hypertension </li>
+      </ul>
+
+      <p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-0">Comment</p>
+      <ul>
+        <li> Discussed referral to new Hosp and spec for dietary needs - Px to monitor BP x2 daily for 7 days. Run HbA1C test.</li>
+      </ul>
+    </div>
+
+
+<!-- Section Break -->
+ <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-2">
+
+ <div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <p>You may see medical abbreviations that you are not familiar with.</p>
+    <a href="https://www.nhs.uk/nhs-app/nhs-app-help-and-support/health-records-in-the-nhs-app/abbreviations-commonly-found-in-medical-records/" class="app-link--with-icon nhsuk-link--no-visited-state">
+      {{ nhsappIcon('help') }}
+      Help with abbreviations
+    </a>
+
+  </div>
+</div>
+
+{% endblock %}

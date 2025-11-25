@@ -1,0 +1,63 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Your health" %}
+
+{% set backLink = true %}
+{% set backLinkText = "Back" %}
+
+{% set pageHeading = "29 August 2025 8:23am" %}
+{% set pageDescription = "Crescent Park Family Practice" %}
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    {{ dynamicPageTitle({
+      title: pageHeading,
+      titleSmall: true,
+      description: pageDescription
+    }) }}
+
+     <div class="nhsuk-u-margin-bottom-7">
+
+      <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+        Miss Diana Turner
+      </p>
+
+<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-0">Comment</p>
+<ul>
+  <li>eConsultation via online application</li>
+  <li class="nhsuk-u-margin-left-4"> Patient request: Appointment – emergency appointment request</li>
+  <li> NHS number: 0000002220</li>
+  <li> Name: Neil Dean </li> 
+  <li> DOB: 08/09/1979 </li> 
+  <li> Gender: Male </li> 
+  <li> Postcode: HP4 7GH </li> 
+  <li>Phone number: 07996579988</li>
+  <li>Registered at: Crescent Park Family Practice</li>
+  <li>Medical problem: Suffering from a dull headache and nausea</li>
+  <li>How long has this been going on for?: Over a week</li>
+  <li>Is this problem getting better or worse?: getting worse</li>
+  <li>Have you tried anything?: Taken various painkillers</li>
+  <li>Expectations: an appointment to discuss symptoms with GP. </li>
+  <li>Contact method preference: Mobile</li>
+  <li>• Preferred clinician to contact them: None</li>
+  </ul>
+<p>Received on 29/08/2025 at 8:23am</p>
+</div>
+
+<!-- Section Break -->
+ <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-2">
+
+ <div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <p>You may see medical abbreviations that you are not familiar with.</p>
+    <a href="https://www.nhs.uk/nhs-app/nhs-app-help-and-support/health-records-in-the-nhs-app/abbreviations-commonly-found-in-medical-records/" class="app-link--with-icon nhsuk-link--no-visited-state">
+      {{ nhsappIcon('help') }}
+      Help with abbreviations
+    </a>
+
+  </div>
+</div>
+
+{% endblock %}
