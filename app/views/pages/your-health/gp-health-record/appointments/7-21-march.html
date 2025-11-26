@@ -13,38 +13,32 @@
   <div class="nhsuk-grid-column-two-thirds">
 
     {{ dynamicPageTitle({
-      title: pageHeading,
-      titleSmall: true,
-      description: pageDescription
+    title: pageHeading,
+    titleSmall: true,
+    description: pageDescription
     }) }}
 
-     <div class="nhsuk-u-margin-bottom-7">
+    <div class="nhsuk-u-margin-bottom-7">
 
-      <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+      <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">
         Miss Diana Turner
       </p>
 
-<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-0">Comment</p>
-<ul>
-  <li>Patient mobile telephone</li>
-  <li class="nhsuk-u-margin-left-4"> +447996579988</li>
-  <li> SMS text message sent to patient</li>
-  <li class="nhsuk-u-margin-left-4"> Dear Patient X, please complete the linked survey regarding the proposed new opening hours and parking restrictions at the surgery. Your feedback will help us shape new and improved healthcare.</li>
-  
-</div>
+      <h2 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h2>
+      <ul>
+        <li>Patient mobile telephone</li>
+        <li class="nhsuk-u-margin-left-4"> +447996579988</li>
+        <li> SMS text message sent to patient</li>
+        <li class="nhsuk-u-margin-left-4"> Dear Patient X, please complete the linked survey regarding the proposed new
+          opening hours and parking restrictions at the surgery. Your feedback will help us shape new and improved
+          healthcare.</li>
 
-<!-- Section Break -->
- <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-2">
-
- <div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-full">
-    <p>You may see medical abbreviations that you are not familiar with.</p>
-    <a href="https://www.nhs.uk/nhs-app/nhs-app-help-and-support/health-records-in-the-nhs-app/abbreviations-commonly-found-in-medical-records/" class="app-link--with-icon nhsuk-link--no-visited-state">
-      {{ nhsappIcon('help') }}
-      Help with abbreviations
-    </a>
-
+    </div>
   </div>
 </div>
+<!-- Section Break -->
+<hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-2">
+
+{{ glossary()}}
 
 {% endblock %}

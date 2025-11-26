@@ -13,46 +13,41 @@
   <div class="nhsuk-grid-column-two-thirds">
 
     {{ dynamicPageTitle({
-      title: pageHeading,
-      titleSmall: true,
-      description: pageDescription
+    title: pageHeading,
+    titleSmall: true,
+    description: pageDescription
     }) }}
 
     <div class="nhsuk-u-margin-bottom-7">
 
-      <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+      <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">
         Dr Sarah Mitchell
       </p>
 
 
-      <p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-0">History</p>
-      <ul>
-        <li> Type-2 Diabetes diagnosed 4.5 years ago. Initially managed with Insulin; patient later introduced to modified-release formulation due to GI side effects. </li>
-        <li>Patient reports episodes of fatigue, particularly mid-afternoon, and inconsistent blood glucose logs over the past month.</li>
+      <h2 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">History</h2>
+      <ul class="nhsuk-u-margin-bottom-0">
+        <li> Type-2 Diabetes diagnosed 4.5 years ago. Initially managed with Insulin; patient later introduced to
+          modified-release formulation due to GI side effects. </li>
+        <li>Patient reports episodes of fatigue, particularly mid-afternoon, and inconsistent blood glucose logs over
+          the past month.</li>
         <li> No recent infections or steroid use. Diet adherence moderate; physical activity irregular. </li>
         <li> High blood pressure for 3 years. Treated with 5mg Ramipril</li>
       </ul>
 
-      <p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-0">Comment</p>
+      <h2 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h2>
       <ul>
-        <li>Reviewed glucose diary; patterns suggest post-prandial hyperglycaemia. Discussed potential titration of metformin MR and reinforcement of meal-timing guidance.</li>
-        <li>Ordered HbA1c and renal profile. Advised BP monitoring twice daily for one week to assess hypertension risk due to recent borderline readings. Follow-up planned after results.</li>
+        <li>Reviewed glucose diary; patterns suggest post-prandial hyperglycaemia. Discussed potential titration of
+          metformin MR and reinforcement of meal-timing guidance.</li>
+        <li>Ordered HbA1c and renal profile. Advised BP monitoring twice daily for one week to assess hypertension risk
+          due to recent borderline readings. Follow-up planned after results.</li>
       </ul>
     </div>
-
-
-<!-- Section Break -->
- <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-2">
-
- <div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-full">
-    <p>You may see medical abbreviations that you are not familiar with.</p>
-    <a href="https://www.nhs.uk/nhs-app/nhs-app-help-and-support/health-records-in-the-nhs-app/abbreviations-commonly-found-in-medical-records/" class="app-link--with-icon nhsuk-link--no-visited-state">
-      {{ nhsappIcon('help') }}
-      Help with abbreviations
-    </a>
-
   </div>
 </div>
 
+<!-- Section Break -->
+<hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-2">
+
+{{ glossary()}}
 {% endblock %}

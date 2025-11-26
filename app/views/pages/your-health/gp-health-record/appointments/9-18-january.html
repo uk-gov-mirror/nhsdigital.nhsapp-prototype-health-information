@@ -13,42 +13,34 @@
   <div class="nhsuk-grid-column-two-thirds">
 
     {{ dynamicPageTitle({
-      title: pageHeading,
-      titleSmall: true,
-      description: pageDescription
+    title: pageHeading,
+    titleSmall: true,
+    description: pageDescription
     }) }}
 
-     <div class="nhsuk-u-margin-bottom-7">
+    <div class="nhsuk-u-margin-bottom-7">
 
-      <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+      <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">
         Nurse Marta Silva
       </p>
 
-<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-0">History</p>
-<ul>
-  <li>Type-2 Diabetes for 4 years; managed with insulin and diet. </li>
-  <li>HbA1c levels stable</li>
-</ul>
-<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-0">Comment</p>
-<ul>
-  <li>Annual diabetes review</li>
-  <li>Px making good progress managing condition</li>
-  <li>Reports improved mood, but some weight gain. Consider alternative diet</li>
-</ul>
-</div>
+      <h2 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">History</h2>
+      <ul class="nhsuk-u-margin-bottom-0">
+        <li>Type-2 Diabetes for 4 years; managed with insulin and diet. </li>
+        <li>HbA1c levels stable</li>
+      </ul>
+      <h2 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h2>
+      <ul>
+        <li>Annual diabetes review</li>
+        <li>Px making good progress managing condition</li>
+        <li>Reports improved mood, but some weight gain. Consider alternative diet</li>
+      </ul>
+    </div>
 
-<!-- Section Break -->
- <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-2">
+    <!-- Section Break -->
+    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-2">
 
- <div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-full">
-    <p>You may see medical abbreviations that you are not familiar with.</p>
-    <a href="https://www.nhs.uk/nhs-app/nhs-app-help-and-support/health-records-in-the-nhs-app/abbreviations-commonly-found-in-medical-records/" class="app-link--with-icon nhsuk-link--no-visited-state">
-      {{ nhsappIcon('help') }}
-      Help with abbreviations
-    </a>
-
+    {{ glossary()}}
   </div>
 </div>
-
 {% endblock %}

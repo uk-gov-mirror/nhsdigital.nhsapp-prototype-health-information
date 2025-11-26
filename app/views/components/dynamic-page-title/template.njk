@@ -20,7 +20,7 @@
       {{ params.linkedProfile.age }} years old
     </p>
   {%- else %}
-    <h1 class="app-dynamic-page-title__heading {%- if params.titleSmall %} nhsuk-heading-l{% endif %}">
+    <h1 class="app-dynamic-page-title__heading{%- if params.titleSmall %} nhsuk-heading-l{% endif %}" aria-label="{{ params.ariaLabel }}">
       {%- if params.greetingName %}
       <span class="app-greeting"></span>, 
       <span class="app-dynamic-page-title__name">{{ params.greetingName }}</span>
@@ -41,7 +41,7 @@
     </p>
     {% endif %}
     {%- if params.description %}
-    <p class="app-dynamic-page-title__description {%- if params.descriptionMuted %} nhsuk-u-secondary-text-color{% endif %}">
+    <p class="app-dynamic-page-title__description {%- if params.descriptionMuted %} nhsuk-u-secondary-text-color{% endif %}" {%- if params.descriptionAriaHidden %} aria-hidden="true" {% endif %}>
       {{ params.description | safe }}
     </p>
     {% endif %}
