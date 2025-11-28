@@ -1,6 +1,6 @@
 {% extends 'layout-app.html' %}
 
-{% set hub = "Your health" %}
+{% set hub = "Home" %}
 
 {% set backLink = true %}
 {% set backLinkText = "Back" %}
@@ -15,7 +15,9 @@
     {{ dynamicPageTitle({
     title: pageHeading,
     titleSmall: true,
-    description: pageDescription
+    description: pageDescription,
+    descriptionAriaHidden: true,
+    ariaLabel: "29th August 2025 at 8:23am with Miss Diana Turner from Crescent Park Family Practice"
     }) }}
 
     <div class="nhsuk-u-margin-bottom-7">
@@ -41,7 +43,7 @@
         <li>Have you tried anything?: Taken various painkillers</li>
         <li>Expectations: an appointment to discuss symptoms with GP. </li>
         <li>Contact method preference: Mobile</li>
-        <li>• Preferred clinician to contact them: None</li>
+        <li>Preferred clinician to contact them: None</li>
       </ul>
       <p>Received on 29/08/2025 at 8:23am</p>
     </div>

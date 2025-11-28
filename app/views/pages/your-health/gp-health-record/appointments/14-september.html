@@ -1,0 +1,42 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Home" %}
+
+{% set backLink = true %}
+{% set backLinkText = "Back" %}
+
+{% set pageHeading = "14 September 2025 2:30pm" %}
+{% set pageDescription = "Crescent Park Family Practice" %}
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+        {{ dynamicPageTitle({
+        title: pageHeading,
+        titleSmall: true,
+        description: pageDescription,
+        descriptionAriaHidden: true,
+        ariaLabel: "14th September 2025 at 2:30pm with Dr Priya Turin from Crescent Park Family Practice"
+        }) }}
+
+        <div class="nhsuk-u-margin-bottom-7">
+
+            <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">
+                Dr Priya Turin
+            </p>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Section Break -->
+<hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-2">
+
+{{ glossary()}}
+
+{% endblock %}

@@ -75,3 +75,9 @@
   fill: $nhsuk-success-colour;
 }
 
+//Remove bullet point from a list//
+.notes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,6 +1,6 @@
 {% extends 'layout-app.html' %}
 
-{% set hub = "Your health" %}
+{% set hub = "Home" %}
 
 {% set backLink = true %}
 {% set backLinkText = "Back" %}
@@ -22,7 +22,7 @@
     <div class="nhsapp-card">
       <div class="nhsapp-card__container">
         <div class="nhsapp-card__content">
-          <a href="view-appointments-by-year" class="nhsapp-card__link nhsuk-link--no-visited-state">
+          <a href="view-notes-by-year" class="nhsapp-card__link nhsuk-link--no-visited-state">
             View by year
           </a>
         </div>
@@ -38,592 +38,748 @@
 
     <h2>{{pageDescription}}</h2>
 
-    <!-- CARDS -->
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-6 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
-      aria-hidden="true">
-      Crescent Park Family Practice
-    </p>
 
-    <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
-      aria-label="18 November 2025 at 12:16pm with Nurse Jamima Jackson from Crescent Park Family Practice">
-      18 November 2025 12:16 pm
-    </h3>
+    <ul class="notes-list" role="list">
 
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22" aria-hidden="true">
-      Nurse Jamima Jackson
-    </p>
+      <!-- NOTE 1 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-6 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
 
-    <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">History</h4>
-    <ul>
-      <li>Patient diagnosed with Type-2 Diabetes 3 years ago</li>
-      <li>Treatments include insulin and dietary changes</li>
-      <li>Patient also diagnosed with hypertension</li>
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="18 November 2025 at 12:16pm with Nurse Jamima Jackson from Crescent Park Family Practice">
+            18 November 2025 12:16 pm
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Nurse Jamima Jackson
+          </p>
+
+          <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">History</h4>
+          <ul>
+            <li>Patient diagnosed with Type-2 Diabetes 3 years ago</li>
+            <li>Treatments include insulin and dietary changes</li>
+            <li>Patient also diagnosed with hypertension</li>
+          </ul>
+
+          <div id="extra-info-11" hidden role="region" aria-labelledby="extra-info-11-heading">
+            <h4 id="extra-info-11-heading" tabindex="-1"
+              class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-0">
+              Comment
+            </h4>
+            <ul>
+              <li>Discussed referral to new Hosp and spec for dietary neers - Px to monitor BP x2 daily
+                for 7 days. Run HbA1C test.</li>
+            </ul>
+          </div>
+
+          <p class="nhsuk-u-margin-top-3">
+            <a href="#" class="js-view-more-link nhsuk-link" data-target="extra-info-11" data-more-text="View More"
+              data-less-text="View Less" role="button" aria-expanded="false" aria-controls="extra-info-11"
+              id="extra-info-11-toggle">
+              View More
+            </a>
+          </p>
+        </div>
+
+        <hr
+          class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+      </li>
+
+      <!-- NOTE 2 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-6 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="18 November 2025 at 12:16pm with Nurse Jamima Jackson from Crescent Park Family Practice">
+            18 November 2025 12:16 pm
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Nurse Jamima Jackson
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">History</h4>
+            <ul class="nhsuk-u-margin-bottom-1">
+              <li>Type-2 Diabetes diagnosed 4.5 years ago. Initially managed with Insulin; patient later
+                introduced to modified-release formulation due to GI side effects.</li>
+              <li>Patient reports episodes of fatigue, particularly mid-afternoon, and inconsistent blood
+                glucose logs over the past month</li>
+            </ul>
+
+            <div id="extra-info-12" hidden role="region" aria-labelledby="extra-info-12-heading">
+
+              <h4 id="extra-info-12-heading" tabindex="-1"
+                class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-0">
+                Comment
+              </h4>
+
+              <ul>
+                <li>Discussed referral to new Hosp and spec for dietary neers - Px to monitor BP x2 daily
+                  for 7 days. Run HbA1C test.</li>
+              </ul>
+            </div>
+
+            <p class="nhsuk-u-margin-top-3">
+              <a href="#" class="js-view-more-link nhsuk-link" data-target="extra-info-12" data-more-text="View More"
+                data-less-text="View Less" role="button" aria-expanded="false" aria-controls="extra-info-12"
+                id="extra-info-12-toggle">
+                View More
+              </a>
+            </p>
+        </div>
+
+        <hr
+          class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+      </li>
+
+      <!-- NOTE 3 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="14 September 2025 at 2:16am with Dr Priya Turin from Crescent Park Family Practice">
+            14 September 2025 2:16 am
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Dr Priya Turin
+          </p>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 4 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="14 September 2025 at 12:16pm with Dr Priya Turin from Crescent Park Family Practice">
+            14 September 2025 12:16 pm
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Dr Priya Turin
+          </p>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 5 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="14 September 2025 at 12:16pm with Dr Priya Turin from Crescent Park Family Practice">
+            14 September 2025 12:16 pm
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Dr Priya Turin
+          </p>
+
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 6 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="14 September 2025 at 12:16pm with Dr Priya Turin from Crescent Park Family Practice">
+            14 September 2025 12:16 pm
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Dr Priya Turin
+          </p>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 7 -->
+      <li>
+        <div>
+
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="7 September 2025 at 12:16pm DOCMAN, PCTI">
+            7 September 2025 12:16 pm
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            DOCMAN, PCTI
+          </p>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 8 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="29 August 2025 at 3:45pm with Dr Priya Turin from Crescent Park Family Practice">
+            29 August 2025 3:45 pm
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Dr Priya Turin
+          </p>
+
+          <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Problem</h4>
+          <ul>
+            <li> Patient reports headache and nausea;; had been consuming large amounts of coffee the last
+              month due to work stress</li>
+          </ul>
+
+          <div id="extra-info-13" hidden role="region" aria-labelledby="extra-info-13-heading">
+            <h4 id="extra-info-13-heading" tabindex="-1"
+              class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">
+              Comment</h4>
+            <ul>
+              <li>Suspected high caffeine intake</li>
+              <li>directed patient to treat headache with co-codamol from pharmacy. Patient to lower
+                caffeine intake gradually over the next 2 weeks. Make a follow-up appointment if
+                symptoms persist after 2 weeks. </li>
+              <li>patient to book in to have bloods taken</li>
+            </ul>
+          </div>
+
+          <p class="nhsuk-u-margin-top-3">
+            <a href="#" class="js-view-more-link nhsuk-link" data-target="extra-info-13" data-more-text="View More"
+              data-less-text="View Less" role="button" aria-expanded="false" aria-controls="extra-info-13"
+              id="extra-info-13-toggle">
+              View More
+            </a>
+          </p>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 9 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="29 August 2025 at 10:44am with Miss Diana Turner from Crescent Park Family Practice">
+            29 August 2025 10:44 am
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Miss Diana Turner
+          </p>
+          <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h4>
+          <ul>
+            <li>Patient mobile telephone number</li>
+            <li class="nhsuk-u-margin-left-4">+447996579988</li>
+            <li> SMS text message sent to patient</li>
+          </ul>
+
+          <div id="extra-info-14" hidden role="region" aria-labelledby="extra-info-14-heading">
+            <ul class="nhsuk-u-margin-top-0">
+              <li class="nhsuk-u-margin-left-4">Dear Patient X, thank you for your recent eConsult, ;; a
+                telephone appointment has been booked with you for the evening of 29/08/2025 with Dr
+                Turin as part of our extended access hours. Please ensure you always have your phone
+                with you. This call will be made from a withheld or unknown number and only 2 call
+                attempts will be made. If your symptoms worsen, please don’t hesitate to contact us or
+                call 111. Sent on 29/08/2025 at 10:43am</li>
+            </ul>
+          </div>
+
+          <p class="nhsuk-u-margin-top-3">
+            <a href="#" class="js-view-more-link nhsuk-link" data-target="extra-info-14" data-more-text="View More"
+              data-less-text="View Less" role="button" aria-expanded="false" aria-controls="extra-info-14"
+              id="extra-info-14-toggle">
+              View More
+            </a>
+          </p>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 10 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="29 August 2025 at 8:23am with Miss Diana Turner from Crescent Park Family Practice">
+            29 August 2025 8:23 am
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Miss Diana Turner
+          </p>
+          <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h4>
+          <ul>
+            <li>eConsultation via online application</li>
+            <li class="nhsuk-u-margin-left-4"> Patient request: Appointment – emergency appointment request
+            </li>
+            <li> NHS number: 0000002220</li>
+          </ul>
+
+          <div id="extra-info-15" hidden role="region" aria-labelledby="extra-info-15-heading">
+            <ul>
+              <li>Name: Neil Dean </li>
+              <li>DOB: 08/09/1979 </li>
+              <li>Gender: Male </li>
+              <li>Postcode: HP4 7GH </li>
+              <li>Phone number: 07996579988</li>
+              <li>Registered at: Crescent Park Family Practice</li>
+              <li>Medical problem: Suffering from a dull headache and nausea</li>
+              <li>How long has this been going on for?: Over a week</li>
+              <li>Is this problem getting better or worse?: getting worse</li>
+              <li>Have you tried anything?: Taken various painkillers</li>
+              <li>Expectations: an appointment to discuss symptoms with GP. </li>
+              <li>Contact method preference: Mobile</li>
+              <li>Preferred clinician to contact them: None</li>
+            </ul>
+            <p>Received on 29/08/2025 at 8:23am</p>
+          </div>
+
+          <p class="nhsuk-u-margin-top-3">
+            <a href="#" class="js-view-more-link nhsuk-link" data-target="extra-info-15" data-more-text="View More"
+              data-less-text="View Less" role="button" aria-expanded="false" aria-controls="extra-info-15"
+              id="extra-info-15-toggle">
+              View More
+            </a>
+          </p>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 11 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="6 July 2025 at 4:15pm with Dr Ahmed Khan from Crescent Park Family Practice">
+            6 July 2025 4:15 pm
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Dr Ahmed Khan
+          </p>
+          <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h4>
+          <ul>
+            <li>Patient referred to MK Hospital for routine diabetes eye screening</li>
+          </ul>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 12 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="6 July 2025 at 8:23am with Dr Ahmed Khan from Crescent Park Family Practice">
+            6 July 2025 8:23 am
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Dr Ahmed Khan
+          </p>
+          <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">History</h4>
+          <ul class="nhsuk-u-margin-bottom-1">
+            <li>Type-2 Diabetes for 4.5 years</li>
+            <li>Reports struggling to stick with new diet</li>
+            <li>No increase in HbA1C levels</li>
+          </ul>
+
+          <div id="extra-info-16" hidden role="region" aria-labelledby="extra-info-16-heading">
+            <ul>
+              <li>Slight weight gain</li>
+              <li>Being treated for hypertension. Blood pressure slightly raised</li>
+            </ul>
+            <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-0">
+              Comment</h4>
+            <ul>
+              <li>Suspected high caffeine intake</li>
+              <li>directed patient to treat headache with co-codamol from pharmacy. Patient to lower
+                caffeine intake gradually over the next 2 weeks. Make a follow-up appointment if
+                symptoms persist after 2 weeks. </li>
+              <li>patient to book in to have bloods taken</li>
+            </ul>
+
+          </div>
+
+          <p class="nhsuk-u-margin-top-3">
+            <a href="#" class="js-view-more-link nhsuk-u-margin-top-4 nhsuk-link" data-target="extra-info-16"
+              data-more-text="View More" data-less-text="View Less" role="button" aria-expanded="false"
+              aria-controls="extra-info-16" id="extra-info-16-toggle">
+              View More
+            </a>
+          </p>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 13 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="21 March 2025 at 11:44am with Miss Diana Turner from Crescent Park Family Practice">
+            21 March 2025 11:44 am
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Miss Diana Turner
+          </p>
+          <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h4>
+          <ul>
+            <li>Patient mobile telephone number</li>
+            <li class="nhsuk-u-margin-left-4">+447996579988</li>
+            <li> SMS text message sent to patient</li>
+          </ul>
+
+          <div id="extra-info-17" hidden role="region" aria-labelledby="extra-info-17-heading">
+            <ul class="nhsuk-u-margin-top-0">
+              <li class="nhsuk-u-margin-left-4"> Dear Neil Dean, please complete the linked survey
+                regarding the proposed new opening hours and parking restrictions at the surgery. Your
+                feedback will help us shape new and improved healthcare.</li>
+            </ul>
+          </div>
+
+          <p class="nhsuk-u-margin-top-3">
+            <a href="#" class="js-view-more-link nhsuk-link" data-target="extra-info-17" data-more-text="View More"
+              data-less-text="View Less" role="button" aria-expanded="false" aria-controls="extra-info-17"
+              id="extra-info-17-toggle">
+              View More
+            </a>
+          </p>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 14 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="18 March 2025 at 1:30pm with Dr Ella Watson from Crescent Park Family Practice">
+            18 March 2025 1:30 pm
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Dr Ella Watson
+          </p>
+          <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Medication</h4>
+          <ul>
+            <li>Insulin - 10 units of long-acting (basal) insulin once a day</li>
+          </ul>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 15 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="18 January 2025 at 8:23am with Nurse Marta Silva from Crescent Park Family Practice">
+            18 January 2025 8:23 am
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Nurse Marta Silva
+          </p>
+          <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">History</h4>
+          <ul>
+            <li>Type-2 Diabetes for 4 years; managed with insulin and diet. </li>
+            <li> HbA1C levels stable</li>
+            <li> Annual diabetes review</li>
+          </ul>
+          <div id="extra-info-18" hidden role="region" aria-labelledby="extra-info-18-heading">
+            <h4 class="nhsuk-u-font-weight nhsuk-u-margin-bottom-1 nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h4>
+            <ul>
+              <li> Px making good progress managing condition </li>
+              <li> Reports improved mood, but some weight gain. Consider alternative diet </li>
+            </ul>
+          </div>
+
+          <p class="nhsuk-u-margin-top-3">
+            <a href="#" class="nhsuk-u-margin-top-4 js-view-more-link nhsuk-link" data-target="extra-info-18"
+              data-more-text="View More" data-less-text="View Less" role="button" aria-expanded="false"
+              aria-controls="extra-info-18" id="extra-info-18-toggle">
+              View More
+            </a>
+          </p>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 16 -->
+      <li>
+        <div>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="18 January 2025 at 2:16am DOCMAN, PCTI">
+            18 January 2025 2:16 am
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            DOCMAN, PCTI
+          </p>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 17 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="12 August 2025 at 3:30pm with Nurse Daniel Horton from Crescent Park Family Practice">
+            12 August 2025 3:30 pm
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Nurse Daniel Horton
+          </p>
+          <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">History</h4>
+          <ul>
+            <li>Type-2 Diabetes for 3.5 years; managed with insulin and diet. </li>
+            <li> HbA1c levels stable </li>
+            <li>New onset chest pains over past month; </li>
+          </ul>
+
+          <div id="extra-info-19" hidden role="region" aria-labelledby="extra-info-19-heading">
+            <ul>
+              <li>Sleep reduced due to increased workload.</li>
+              <li>No medication side effects reported. </li>
+              <li>Has history of hypertension </li>
+            </ul>
+            <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">
+              Comment</h4>
+            <ul>
+              <li>Advised monitoring headache pattern, ensuring adequate hydration and sleep hygiene.</li>
+              <li>Requested 7-day BP readings to check for fluctuations.</li>
+              <li>Plan review in one week or earlier if symptoms escalate.</li>
+            </ul>
+          </div>
+
+          <p class="nhsuk-u-margin-top-3">
+            <a href="#" class="nhsuk-u-margin-top-4 js-view-more-link nhsuk-link" data-target="extra-info-19"
+              data-more-text="View More" data-less-text="View Less" role="button" aria-expanded="false"
+              aria-controls="extra-info-19" id="extra-info-19-toggle">
+              View More
+            </a>
+          </p>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+      <!-- NOTE 18 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="1 August 2024 at 12:45pm with Dr Joanna Patel from Crescent Park Family Practice">
+            1 August 2024 12:45 pm
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Dr Joanna Patel
+          </p>
+          <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h4>
+          <ul>
+            <li>Patient mobile telephone number</li>
+            <li class="nhsuk-u-margin-left-4">+447996579988</li>
+            <li> SMS text message sent to patient</li>
+          </ul>
+
+          <div id="extra-info-20" hidden role="region" aria-labelledby="extra-info-20-heading">
+            <ul class="nhsuk-u-margin-top-0">
+              <li class="nhsuk-u-margin-left-4"> Dear patient. Please book in your 6-month HbA1c test to
+                monitor your diabetes</li>
+            </ul>
+          </div>
+
+          <p class="nhsuk-u-margin-top-3">
+            <a href="#" class="js-view-more-link nhsuk-link" data-target="extra-info-20" data-more-text="View More"
+              data-less-text="View Less" role="button" aria-expanded="false" aria-controls="extra-info-20"
+              id="extra-info-20-toggle">
+              View More
+            </a>
+          </p>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
+      <!-- NOTE 19 -->
+      <li>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour"
+            aria-hidden="true">
+            Crescent Park Family Practice
+          </p>
+
+          <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0"
+            aria-label="26 June 2024 at 2:16am with Nurse Callum Evans from Crescent Park Family Practice">
+            26 June 2024 2:16 am
+          </h3>
+
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-20" aria-hidden="true">
+            Nurse Callum Evans
+          </p>
+
+          <hr
+            class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+        </div>
+      </li>
+
     </ul>
 
-    <div id="extra-info-1" hidden>
-      <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">Comment</h4>
-      <ul>
-        <li>Discussed referral to new Hosp and spec for dietary neers - Px to monitor BP x2 daily for 7 days. Run HbA1C
-          test.</li>
-      </ul>
-    </div>
-
-    <p>
-      <a href="#extra-info-1" class="js-view-more-link nhsuk-link" data-target="extra-info-1" data-more-text="View More"
-        data-less-text="View Less" aria-expanded="false" aria-controls="extra-info-1">
-        View More
-      </a>
-    </p>
-
-    <!-- Note 1 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-6 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      18 November 2025 12:16 pm
-    </h3>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Nurse Jamima Jackson
-    </p>
-
-    <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">History</h4>
-    <ul>
-      <li>Patient diagnosed with Type-2 Diabetes 3 years ago</li>
-      <li>Treatments include insulin and dietary changes</li>
-      <li>Patient also diagnosed with hypertension</li>
-    </ul>
-    <div id="extra-info-13" hidden>
-      <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">Comment</h4>
-      <ul>
-        <li>Discussed referral to new Hosp and spec for dietary needs - Px to monitor BP x2 daily for 7 days. Run HbA1C
-          test.</li>
-      </ul>
-
-    </div>
-    <p> <a href="#" class="js-view-more-link nhsuk-link" data-target="extra-info-13" data-more-text="View More"
-        data-less-text="View Less">View More </a> </p>
-
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4">
-
-    <!-- Note 2 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <h3 class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      18 November 2025 12:16 pm
-    </h3>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Nurse Jamima Jackson
-    </p>
-
-    <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">History</h4>
-    <ul class="nhsuk-u-margin-bottom-1">
-      <li>Type-2 Diabetes diagnosed 4.5 years ago. Initially managed with Insulin; patient later introduced to
-        modified-release formulation due to GI side effects.</li>
-      <li>Patient reports episodes of fatigue, particularly mid-afternoon, and inconsistent</li>
-    </ul>
-    <div id="extra-info-2" hidden>
-      <p class="nhsuk-u-margin-left-5 nhsuk-u-margin-top-1"> blood glucose logs over the past month </p>
-      <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">Comment</h4>
-      <ul>
-        <li>Discussed referral to new Hosp and spec for dietary neers - Px to monitor BP x2 daily for 7 days. Run HbA1C
-          test.</li>
-      </ul>
-
-    </div>
-    <p> <a href="#" class="nhsuk-u-margin-top-4 js-view-more-link nhsuk-link" data-target="extra-info-2"
-        data-more-text="View More" data-less-text="View Less">View More </a> </p>
-
-
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-
-    <!-- Note 3 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      14 September 2025 2:16 am
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Dr Priya Turin
-    </p>
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-
-    <!-- Note 4 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      14 September 2025 12:16 pm
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Dr Priya Turin
-    </p>
-
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-
-    <!-- Note 5 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      14 September 2025 12:16 pm
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Dr Priya Turin
-    </p>
-    <p class="nhsuk-body-m"> A <a href="#" class="nhsuk-link">test result</a> has been uploaded to your health record
-    </p>
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-
-    <!-- Note 6 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      14 September 2025 12:16 pm
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Dr Priya Turin
-    </p>
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-
-    <!-- Note 7 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      7 September 2025 12:16 pm
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      DOCMAN, pcti
-    </p>
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-
-    <!-- Note 8 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      29 August 2025 3:45 pm
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Dr Priya Turin
-    </p>
-    <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Problem</h4>
-    <ul>
-      <li> Patient reports headache and nausea;; had been consuming large amounts of coffee the last month due to work
-        stress
-    </ul>
-
-    <div id="extra-info-8" hidden>
-      <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">Comment</h4>
-      <ul>
-        <li>Suspected high caffeine intake</li>
-        <li>directed patient to treat headache with co-codamol from pharmacy. Patient to lower caffeine intake gradually
-          over the next 2 weeks. Make a follow-up appointment if symptoms persist after 2 weeks. </li>
-        <li>patient to book in to have bloods taken</li>
-      </ul>
-
-    </div>
-    <p> <a href="#" class="js-view-more-link nhsuk-link" data-target="extra-info-8" data-more-text="View More"
-        data-less-text="View Less">View More </a> </p>
-
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-    <!-- Note 9 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      29 August 2025 10:44 am
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Miss Diana Turner
-    </p>
-    <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h4>
-    <ul>
-      <li>Patient mobile telephone number</li>
-      <li class="nhsuk-u-margin-left-4">+447996579988</li>
-      <li> SMS text message sent to patient</li>
-    </ul>
-    <div id="extra-info-9" hidden>
-      <ul class="nhsuk-u-margin-top-0">
-        <li class="nhsuk-u-margin-left-4">Dear Patient X, thank you for your recent eConsult, ;; a telephone appointment
-          has been booked with you for the evening of 29/08/2025 with Dr Turin as part of our extended access hours.
-          Please ensure you always have your phone with you. This call will be made from a withheld or unknown number
-          and only 2 call attempts will be made. If your symptoms worsen, please don’t hesitate to contact us or call
-          111. Sent on 29/08/2025 at 10:43am</li>
-      </ul>
-
-    </div>
-    <p> <a href="#" class="js-view-more-link nhsuk-link" data-target="extra-info-9" data-more-text="View More"
-        data-less-text="View Less">View More </a> </p>
-
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-    <!-- Note 10 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      29 August 2025 8:23 am
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Miss Diana Turner
-    </p>
-    <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h4>
-    <ul>
-      <li>eConsultation via online application</li>
-      <li class="nhsuk-u-margin-left-4"> Patient request: Appointment – emergency appointment request</li>
-      <li> NHS number: 0000002220</li>
-    </ul>
-    <div id="extra-info-10" hidden>
-      <ul>
-        <li> Name: Neil Dean </li>
-        <li> DOB: 08/09/1979 </li>
-        <li> Gender: Male </li>
-        <li> Postcode: HP4 7GH </li>
-        <li>Phone number: 07996579988</li>
-        <li>Registered at: Crescent Park Family Practice</li>
-        <li>Medical problem: Suffering from a dull headache and nausea</li>
-        <li>How long has this been going on for?: Over a week</li>
-        <li>Is this problem getting better or worse?: getting worse</li>
-        <li>Have you tried anything?: Taken various painkillers</li>
-        <li>Expectations: an appointment to discuss symptoms with GP. </li>
-        <li>Contact method preference: Mobile</li>
-        <li>• Preferred clinician to contact them: None</li>
-      </ul>
-      <p>Received on 29/08/2025 at 8:23am</p>
-    </div>
-    <p> <a href="#" class="js-view-more-link nhsuk-link" data-target="extra-info-10" data-more-text="View More"
-        data-less-text="View Less">View More </a> </p>
-
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-    <!-- Note 11 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      6 July 2025 4:15 pm
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Dr Ahmed Khan
-    </p>
-    <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h4>
-    <ul>
-      <li>Patient referred to MK Hospital for routine diabetes eye screening</li>
-    </ul>
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-    <!-- Note 12 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      6 July 2025 8:23 am
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Dr Ahmed Khan
-    </p>
-    <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">History</h4>
-    <ul class="nhsuk-u-margin-bottom-1">
-      <li>Type-2 Diabetes for 4.5 years</li>
-      <li>Reports struggling to stick with new diet</li>
-      <li>No increase in HbA1C levels</li>
-    </ul>
-    <div id="extra-info-12" hidden>
-      <ul>
-        <li>Slight weight gain</li>
-        <li>Being treated for hypertension. Blood pressure slightly raised</li>
-
-        <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">Comment</h4>
-        <ul>
-          <li>Suspected high caffeine intake</li>
-          <li>directed patient to treat headache with co-codamol from pharmacy. Patient to lower caffeine intake
-            gradually over the next 2 weeks. Make a follow-up appointment if symptoms persist after 2 weeks. </li>
-          <li>patient to book in to have bloods taken</li>
-        </ul>
-    </div>
-    <p> <a href="#" class="nhsuk-u-margin-top-4 js-view-more-link nhsuk-link" data-target="extra-info-12"
-        data-more-text="View More" data-less-text="View Less">View More </a> </p>
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-    <!-- Note 13 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      21 March 2025 11:44 am
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Miss Diana Turner
-    </p>
-    <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h4>
-    <ul>
-      <li>Patient mobile telephone number</li>
-      <li class="nhsuk-u-margin-left-4">+447996579988</li>
-      <li> SMS text message sent to patient</li>
-    </ul>
-    <div id="extra-info-13" hidden>
-      <ul class="nhsuk-u-margin-top-0">
-        <li class="nhsuk-u-margin-left-4"> Dear Neil Dean, please complete the linked survey regarding the proposed new
-          opening hours and parking restrictions at the surgery. Your feedback will help us shape new and improved
-          healthcare.</li>
-      </ul>
-
-    </div>
-    <p> <a href="#" class="js-view-more-link nhsuk-link" data-target="extra-info-13" data-more-text="View More"
-        data-less-text="View Less">View More </a> </p>
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-    <!-- Note 14 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      18 March 2025 1:30 pm
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Dr Ella Watson
-    </p>
-    <h4 class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-0">Medication</h4>
-    <ul>
-      <li>Insulin - 10 units of long-acting (basal) insulin once a day</li>
-    </ul>
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-    <!-- Note 15 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      18 January 2025 8:23 am
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Nurse Marta Silva
-    </p>
-    <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">History</h4>
-    <ul>
-      <li>Type-2 Diabetes for 4 years; managed with insulin and diet. </li>
-      <li>HbA1C levels stable</li>
-    </ul>
-    <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h4>
-    <div id="extra-info-15" hidden>
-      <ul>
-        <li> Annual diabetes review</li>
-        <li> Px making good progress managing condition </li>
-        <li> Reports improved mood, but some weight gain. Consider alternative diet </li>
-      </ul>
-    </div>
-    <p> <a href="#" class="nhsuk-u-margin-top-4 js-view-more-link nhsuk-link" data-target="extra-info-15"
-        data-more-text="View More" data-less-text="View Less">View More </a> </p>
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-    <!-- Note 16 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      18 January 2025 2:16 am
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Doc Man
-    </p>
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-    <!-- Note 17 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      12 August 2025 3:30 pm
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Nurse Daniel Horton
-    </p>
-    <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">History</h4>
-    <ul class="nhsuk-u-margin-bottom-1">
-      <li>Type-2 Diabetes for 3.5 years; managed with insulin and diet. </li>
-      <li> HbA1c levels stable </li>
-      <li>New onset chest pains over past month; </li>
-    </ul>
-    <div id="extra-info-17" hidden>
-      <ul>
-        <li>Sleep reduced due to increased workload.</li>
-        <li>No medication side effects reported. </li>
-        <li>Has history of hypertension </li>
-      </ul>
-      <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">Comment</h4>
-      <ul>
-        <li>Advised monitoring headache pattern, ensuring adequate hydration and sleep hygiene.</li>
-        <li>Requested 7-day BP readings to check for fluctuations.</li>
-        <li>Plan review in one week or earlier if symptoms escalate.</li>
-      </ul>
-    </div>
-    <p> <a href="#" class="nhsuk-u-margin-top-4 js-view-more-link nhsuk-link" data-target="extra-info-17"
-        data-more-text="View More" data-less-text="View Less">View More </a> </p>
-
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-    <!-- Note 18 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      1 August 2024 12:45 pm
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Dr Joanna Patel
-    </p>
-    <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Comment</h4>
-    <ul>
-      <li>Patient mobile telephone number</li>
-      <li class="nhsuk-u-margin-left-4">+447996579988</li>
-      <li> SMS text message sent to patient</li>
-    </ul>
-    <div id="extra-info-18" hidden>
-      <ul class="nhsuk-u-margin-top-0">
-        <li class="nhsuk-u-margin-left-4"> Dear patient. Please book in your 6-month HbA1c test to monitor your diabetes
-        </li>
-      </ul>
-
-    </div>
-    <p> <a href="#" class="js-view-more-link nhsuk-link" data-target="extra-info-18" data-more-text="View More"
-        data-less-text="View Less">View More </a> </p>
-
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-
-    <!-- Note 19 -->
-    <p
-      class="nhsuk-u-font-weight-bold nhsuk-heading-xs nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-2 nhsuk-u-secondary-text-colour">
-      Crescent Park Family Practice
-    </p>
-
-    <p class="nhsuk-u-font-weight-bold nhsuk-heading-s nhsuk-u-margin-bottom-0">
-      26 June 2024 2:16 am
-    </p>
-
-    <p class="nhsuk-u-margin-top-1 nhsuk-u-font-size-22">
-      Nurse Callum Evans
-    </p>
-    <p class="nhsuk-body-m"> A <a href="#" class="nhsuk-link">test result</a> has been uploaded to your health record
-    </p>
-    <!-- Section Break -->
-    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-8">
-
-
-
-
-
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-full">
-        <p>You may see medical abbreviations that you are not familiar with.</p>
-        <a href="#" class="app-link--with-icon nhsuk-link--no-visited-state">
-          {{ nhsappIcon('help') }}
-          Help with abbreviations
-        </a>
-      </div>
-    </div>
-
-    <div class="nhsapp-card nhsapp-card">
+    <!-- Shared script -->
+    <script>
+      (function () {
+        function toggle(link) {
+          const panelId = link.getAttribute('aria-controls') || link.dataset.target;
+          const panel = document.getElementById(panelId);
+          if (!panel) return;
+
+          const expanded = link.getAttribute('aria-expanded') === 'true';
+          if (expanded) {
+            // collapse
+            link.setAttribute('aria-expanded', 'false');
+            panel.setAttribute('hidden', '');
+            link.textContent = link.dataset.moreText || 'View More';
+            link.focus();
+          } else {
+            // expand
+            link.setAttribute('aria-expanded', 'true');
+            panel.removeAttribute('hidden');
+            link.textContent = link.dataset.lessText || 'View Less';
+
+            // Move focus to the panel heading so SR reads the new content
+            const headingId = panel.getAttribute('aria-labelledby');
+            let heading = headingId ? document.getElementById(headingId) : null;
+            if (!heading) heading = panel.querySelector('h1,h2,h3,h4,h5,h6,[tabindex="-1"]');
+            if (heading) {
+              if (!heading.hasAttribute('tabindex')) heading.setAttribute('tabindex', '-1');
+              setTimeout(() => heading.focus(), 50);
+            }
+          }
+        }
+
+        document.querySelectorAll('.js-view-more-link').forEach(link => {
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+            toggle(this);
+          });
+
+          // Make Spacebar activate the anchor like a button
+          link.addEventListener('keydown', function (e) {
+            if (e.key === ' ' || e.key === 'Spacebar') {
+              e.preventDefault();
+              this.click();
+            }
+          });
+        });
+      })();
+    </script>
+
+    {{ glossary()}}
+
+    <div class=" nhsuk-u-margin-top-5 nhsapp-card nhsapp-card">
       <div class="nhsapp-card__container">
         <div class="nhsapp-card__content">
           <a href="appointment-note-list" class="nhsapp-card__link nhsuk-link--no-visited-state">

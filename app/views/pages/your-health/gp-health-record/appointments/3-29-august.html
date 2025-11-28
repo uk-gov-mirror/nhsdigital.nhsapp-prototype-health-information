@@ -1,6 +1,6 @@
 {% extends 'layout-app.html' %}
 
-{% set hub = "Your health" %}
+{% set hub = "Home" %}
 
 {% set backLink = true %}
 {% set backLinkText = "Back" %}
@@ -15,7 +15,9 @@
     {{ dynamicPageTitle({
     title: pageHeading,
     titleSmall: true,
-    description: pageDescription
+    description: pageDescription,
+    descriptionAriaHidden: true,
+    ariaLabel: "29th August 2025 at 3:15pm with Dr Priya Turin from Crescent Park Family Practice"
     }) }}
 
     <div class="nhsuk-u-margin-bottom-7">

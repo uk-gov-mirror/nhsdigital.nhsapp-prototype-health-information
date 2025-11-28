@@ -1,6 +1,6 @@
 {% extends 'layout-app.html' %}
 
-{% set hub = "Your health" %}
+{% set hub = "Home" %}
 
 {% set backLink = true %}
 {% set backLinkText = "Back" %}
@@ -15,7 +15,9 @@
     {{ dynamicPageTitle({
     title: pageHeading,
     titleSmall: true,
-    description: pageDescription
+    description: pageDescription,
+    descriptionAriaHidden: true,
+    ariaLabel: "6th July 2025 at 4:30pm with Dr Ahmed Khan from Crescent Park Family Practice"
     }) }}
 
     <div class="nhsuk-u-margin-bottom-7">
