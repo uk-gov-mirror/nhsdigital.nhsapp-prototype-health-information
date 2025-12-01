@@ -72,7 +72,8 @@
             </h4>
             <ul>
               <li>Discussed referral to new Hosp and spec for dietary neers - Px to monitor BP x2 daily
-                for 7 days. Run HbA1C test.</li>
+                for 7 days. Run HbA1C test.
+              </li>
             </ul>
           </div>
 
@@ -86,7 +87,7 @@
         </div>
 
         <hr
-          class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3">
+          class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4 color_nhsuk-grey-3" />
       </li>
 
       <!-- NOTE 2 -->
@@ -727,55 +728,6 @@
       </li>
 
     </ul>
-
-    <!-- Shared script -->
-    <script>
-      (function () {
-        function toggle(link) {
-          const panelId = link.getAttribute('aria-controls') || link.dataset.target;
-          const panel = document.getElementById(panelId);
-          if (!panel) return;
-
-          const expanded = link.getAttribute('aria-expanded') === 'true';
-          if (expanded) {
-            // collapse
-            link.setAttribute('aria-expanded', 'false');
-            panel.setAttribute('hidden', '');
-            link.textContent = link.dataset.moreText || 'View More';
-            link.focus();
-          } else {
-            // expand
-            link.setAttribute('aria-expanded', 'true');
-            panel.removeAttribute('hidden');
-            link.textContent = link.dataset.lessText || 'View Less';
-
-            // Move focus to the panel heading so SR reads the new content
-            const headingId = panel.getAttribute('aria-labelledby');
-            let heading = headingId ? document.getElementById(headingId) : null;
-            if (!heading) heading = panel.querySelector('h1,h2,h3,h4,h5,h6,[tabindex="-1"]');
-            if (heading) {
-              if (!heading.hasAttribute('tabindex')) heading.setAttribute('tabindex', '-1');
-              setTimeout(() => heading.focus(), 50);
-            }
-          }
-        }
-
-        document.querySelectorAll('.js-view-more-link').forEach(link => {
-          link.addEventListener('click', function (e) {
-            e.preventDefault();
-            toggle(this);
-          });
-
-          // Make Spacebar activate the anchor like a button
-          link.addEventListener('keydown', function (e) {
-            if (e.key === ' ' || e.key === 'Spacebar') {
-              e.preventDefault();
-              this.click();
-            }
-          });
-        });
-      })();
-    </script>
 
     {{ glossary()}}
 
