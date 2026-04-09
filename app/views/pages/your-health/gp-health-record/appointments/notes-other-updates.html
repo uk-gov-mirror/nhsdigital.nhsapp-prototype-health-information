@@ -1,55 +1,67 @@
 {% extends 'layout-app.html' %}
 
-{% set hub = "Your health" %}
+{% set hub = "Home" %}
 
 {% set backLink = true %}
 {% set backLinkText = "Back" %}
 
 {% set pageHeading = "Appointment notes and other updates" %}
-
+{% set pageDescription = "Showing all notes and updates" %}
 {% block content %}
 
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
 
-      <!-- DYNAMIC PAGE TITLE -->
-      {{ dynamicPageTitle({
-        title: pageHeading
+
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({
+    title: pageHeading,
+    titleSecondary: true,
+    description: pageDescription
     })}}
-<div class="nhsapp-card">
-  <div class="nhsapp-card__container">
-    <div class="nhsapp-card__content">
 
 
-<!-- CARDS -->
-<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > Monday 3 June 2024  </p> <p> Croydon University Hospital - <br> RALPH, Amy (Mrs) </p> 
-<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-0" > History <ul>
-  <li>Attended alone: ID confirmed</li>
-  <li>multiple years history of lump left side of forehead</li>
-  <li>worried its something sinister</li>
-  <li>no hearing changes</li>
-  <li>no recent trauma</li>
-  <li>no weightloss</li>
-</ul> </p>
-<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0" > Problem <ul>
-  <li>O/E - A lump </li>
-</ul> </p>
-<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0" > Comment <ul>
-  <li>given length of time and potential gorwth can do US to confirm but reassured likely benign </li>
-</ul> </p>
- </div> </div> </div>
-    <div class="nhsapp-card">
-  <div class="nhsapp-card__container">
-    <div class="nhsapp-card__content">
-<p class="nhsuk-u-font-weight nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1" > No further information available </p></div> </div> </div>
 
- <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-full">
-        <p>You may see medical abbreviations that you are not familiar with.</p>
-        <a href="#" class="app-link--with-icon nhsuk-link--no-visited-state">
-         {{ nhsappIcon('help') }}
+
+    <!-- SECTION TITLE - NOVEMBER -->
+    <h2 class="nhsuk-heading-s "> November 2025</h2>
+
+    <ul class="nhsapp-cards" role="list">
+      <!-- NOTE 1 -->
+      <li class="nhsapp-card" role="listitem">
+        <div class="nhsapp-card__container">
+          <div class="nhsapp-card__content">
+            <p class="nhsapp-card__title nhsuk-u-font-size-22"
+              aria-label="18 November 2025 at 2:25pm with Nurse Jamima Jackson from Crescent Park Family Practice">
+              18 November 2025 2:25pm
+            </p>
+
+            <p aria-hidden="true" class="nhsuk-u-margin-bottom-1 nhsuk-u-margin-top-1">
+              Nurse Jamima Jackson </p>
+
+            <p aria-hidden="true" class="nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-3 nhsuk-u-secondary-text-colour">
+              Crescent Park Family Practice </p>
+
+            <h4 class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">History</h4>
+            <ul class="nhsuk-list nhsuk-list--bullet nhsuk-u-margin-top-0">
+              <li>Patient diagnosed with Type-2 Diabetes 4.5 years ago</li>
+              <li>Treatments include insulin and dietary changes</li>
+              <li>Patient also diagnosed with hypertension</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </li>
+
+
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full nhsuk-u-margin-top-4">
+          <p>You may see medical abbreviations that you are not familiar with.</p>
+          <a href="#" class="app-link--with-icon nhsuk-link--no-visited-state">
+            {{ nhsappIcon('help') }}
             Help with abbreviations
-        </a>
+          </a>
+        </div>
       </div>
-    </div>
-{% endblock %}
+      {% endblock %}
