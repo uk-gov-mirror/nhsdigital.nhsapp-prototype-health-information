@@ -1,0 +1,40 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Your health" %}
+
+{% set backLink = true %}
+{% set backLinkText = "Back" %}
+
+{% set pageHeading = "Appointment letter" %}
+{% set pageDescription = "Attachment added on 20 May 2025" %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({
+    title: pageHeading,
+    description: pageDescription
+    })}}
+
+    <img class="nhsuk-u-margin-bottom-5" src="/images/pdf-viewer.png" alt="User icon">
+
+
+    <div class="nhsuk-body-m">
+      <p> When you download this document, you become responsible for keeping it confidential. </p>
+    </div>
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-5">
+        <p>You may see medical abbreviations that you are not familiar with.</p>
+        <a href="#" class="app-link--with-icon nhsuk-link--no-visited-state">
+          {{ nhsappIcon('help') }}
+          Help with abbreviations
+        </a>
+      </div>
+    </div>
+
+
+
+    {% endblock %}
